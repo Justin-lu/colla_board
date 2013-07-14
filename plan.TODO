@@ -1,9 +1,11 @@
+## Editor: Sublime Text 2 ( with plugin: PlanTasks )
+
 v1.0.0
  ☐ 开发各项配置
- ☐ Bootstrap 的引入
- ☐ 使用 yammer 登录
- ☐ 增加项目管理
- ☐ 增加任务管理
+ ☐ Bootstrap 的引入, 并与 simple_form 结合
+ ☐ 使用 yammer帐号 登录
+ ☐ 增加项目管理功能
+ ☐ 增加任务管理功能
 
 v1.1.0
  ☐ 任务增加评论功能
