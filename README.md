@@ -12,6 +12,10 @@
 * run `rake db:create` & `rake db:migrate`
 * `rails s`
 
+## Plan
+
+  请看`plan.TODO`文件
+
 ## Contributing
 
 1. Fork it
