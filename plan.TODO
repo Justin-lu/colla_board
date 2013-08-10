@@ -4,9 +4,17 @@ v1.0.0
  ✔ 开发各项配置 @done (13-08-10 20:58)
  ✔ Bootstrap 的引入, 并与 simple_form 结合 @done (13-08-10 21:00)
  ✔ 使用 yammer帐号 登录 @done (13-08-10 22:17)
- ☐ 增加项目管理功能
- ☐ 增加任务管理功能
+ ☐ project
+ ☐ task
 
 v1.1.0
- ☐ 任务增加评论功能
- ☐ 评论邮件通知
+ ☐ task comment
+   ☐ add comment
+   ☐ remove comment
+   ☐ edit comment
+ ☐ task eamil notification
+   ☐ get assigned task notification
+   ☐ update task todo notification
+   ☐ complete task notification
+   ☐ accept task notification
+   ☐ comment task notification
