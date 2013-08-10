@@ -11,5 +11,10 @@ CollaBoard::Application.routes.draw do
   get "/auth/:provider/callback" => 'sessions#create'
   post "/auth/:provider/callback" => 'sessions#create'
 
+  resources :users, only: [:index, :show]
+  resources :projects
+  resources :tasks
+  resources :comments
+
   root to: "dashboard#index"
 end
