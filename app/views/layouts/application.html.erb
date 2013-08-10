@@ -22,7 +22,8 @@
        
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li><%= link_to "Project", projects_path %></li>
+            <li><%= link_to "项目", projects_path, class: "nav-link" %></li>
+            <li><%= link_to "用户", users_path, class: "nav-link" %></li>
           </ul>
           <ul class="nav pull-right">
             <li class="nav-avatar">
@@ -35,6 +36,9 @@
       </div>
     </div>
   </div>
-  <%= yield %>
+
+  <div id="site-main-wrapper">
+    <%= yield %>
+  </div>
 </body>
 </html>
