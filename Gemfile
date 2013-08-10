@@ -26,6 +26,8 @@ gem 'paranoia', '~> 2.0'
 
 ## 表单
 gem 'simple_form', '>= 3.0.0.rc'
+gem 'kaminari'
+gem 'kaminari-bootstrap'
 
 group :development, :test do
   gem "pry"
