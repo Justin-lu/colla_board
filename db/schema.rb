@@ -11,7 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130724164923) do
+ActiveRecord::Schema.define(version: 20130810150457) do
+
+  create_table "comments", force: true do |t|
+    t.integer "task_id",   null: false
+    t.integer "author_id", null: false
+    t.text    "content"
+  end
+
+  create_table "projects", force: true do |t|
+    t.string   "title",                       null: false
+    t.text     "description"
+    t.boolean  "archived",    default: false, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tasks", force: true do |t|
+    t.string   "subject",                      null: false
+    t.text     "content"
+    t.string   "status",                       null: false
+    t.boolean  "urgent",       default: false, null: false
+    t.integer  "project_id",                   null: false
+    t.integer  "author_id"
+    t.integer  "assignee_id"
+    t.integer  "reviewer_id"
+    t.datetime "start_at"
+    t.datetime "completed_at"
+    t.datetime "due_to"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email"

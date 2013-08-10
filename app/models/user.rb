@@ -1,6 +1,14 @@
 class User < ActiveRecord::Base
   validates_presence_of :email, :name, :avatar, :yammer_uid
 
+  has_many :comments
+  has_many :tasks, -> { order("urgent DESC, updated_at DESC") },
+    foreign_key: "author_id"
+  has_many :review_tasks, -> { order("urgent DESC, updated_at DESC") },
+    class_name: "Task", foreign_key: "reviewer_id"
+  has_many :todo_tasks, -> { order("urgent DESC, updated_at DESC") },
+    class_name: "Task", foreign_key: "assignee_id"
+
   def self.find_or_create_from_auth_hash auth_hash
     user_attributes = {
       email: auth_hash.info.email,
