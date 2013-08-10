@@ -35,14 +35,13 @@ group :development do
   gem "thin"
   gem "quiet_assets"
   gem "capistrano", ">= 2.15", require: false
-# gem 'postmark-rails'
 end
 
 group :test do
   gem 'factory_girl_rails', '>= 4.0.0'
   gem "minitest", '~> 4.7.5'
   gem 'ffaker'
-  gem 'database_cleaner'
+  gem "database_cleaner", '1.0.0.RC1'
   gem "simplecov", require: false
 end
 

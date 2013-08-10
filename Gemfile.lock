@@ -43,7 +43,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     daemons (1.1.9)
-    database_cleaner (0.9.1)
+    database_cleaner (1.0.0.RC1)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
@@ -176,7 +176,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano (>= 2.15)
   coffee-rails (~> 4.0.0)
-  database_cleaner
+  database_cleaner (= 1.0.0.RC1)
   factory_girl_rails (>= 4.0.0)
   ffaker
   jquery-rails

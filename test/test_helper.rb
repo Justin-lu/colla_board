@@ -1,16 +1,13 @@
 ENV["RAILS_ENV"] = "test"
 require File.expand_path("../../config/environment", __FILE__)
 require "rails/test_help"
-
 require 'minitest/autorun'
-require "minitest/rails"
-require 'minitest/spec'
+require "minitest/mock"
 require 'ffaker'
 
 DatabaseCleaner.strategy = :transaction
 
 class ActiveSupport::TestCase
-  extend MiniTest::Spec::DSL # Add some RSpec style helper
   include FactoryGirl::Syntax::Default
 
   setup do
@@ -19,5 +16,18 @@ class ActiveSupport::TestCase
 
   teardown do
     DatabaseCleaner.clean
+  end
+
+  def sign_in other_user = nil
+    current_user = other_user || user
+    session[:user_id] = current_user.id
+  end
+
+  def sign_out other_user = nil
+    session[:user_id] = nil
+  end
+
+  def user
+    create(:user)
   end
 end
