@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20130724164923) do
     t.string   "email"
     t.string   "name"
     t.string   "avatar"
+    t.string   "yammer_uid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

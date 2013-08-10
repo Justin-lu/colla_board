@@ -4,6 +4,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :name
       t.string :avatar
+      t.string :yammer_uid
 
       t.timestamps
     end

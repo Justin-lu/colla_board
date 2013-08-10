@@ -1,9 +1,9 @@
 if Rails.env.production?
-  yammer_key = "ef9Flw6en2Hf8Ke9CIXwBg"
-  yammer_secret = "c1W4jesP5uPKFlVxLkSIRN0H2KNw4uzeiEXlCzDHc"
+  yammer_key = "oSm2QlHLEYTFeteJHCh1Q"
+  yammer_secret = "ZCTZImcaD1BpcQw5APfCttpdVi1SYRevFuNBe8xXcE"
 else
-  yammer_key = ENV['YAMMER_KEY'] || "6GnaT68KbaYBTH9e3il6w"
-  yammer_secret = ENV['YAMMER_SECRET'] || "adH7PyMVDwVNhhBXkBsoGgOiL6F4kXCY0WtaQenr0"
+  yammer_key = ENV['YAMMER_KEY'] || "oSm2QlHLEYTFeteJHCh1Q"
+  yammer_secret = ENV['YAMMER_SECRET'] || "ZCTZImcaD1BpcQw5APfCttpdVi1SYRevFuNBe8xXcE"
 end
 
 Rails.application.config.middleware.use OmniAuth::Builder do
