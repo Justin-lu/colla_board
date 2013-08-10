@@ -5,7 +5,11 @@ v1.0.0
  ✔ Bootstrap 的引入, 并与 simple_form 结合 @done (13-08-10 21:00)
  ✔ 使用 yammer帐号 登录 @done (13-08-10 22:17)
  ☐ project
+   ✔ create & edit @done (13-08-11 02:33)
+   ☐ project show page, show tasks
  ☐ task
+   ☐ new task & edit
+   ☐ taks show
 
 v1.1.0
  ☐ task comment
