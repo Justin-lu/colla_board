@@ -1,10 +1,10 @@
-FactoryGirld.define do
+FactoryGirl.define do
   factory :project do
     sequence(:title) { |n| "Project, No.#{n}" }
     sequence(:description) { |n| "Project description, random #{n}" }
     archived false
 
-    trait :archive do
+    trait :with_archive do
       archived true
     end
 

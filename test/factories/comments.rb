@@ -1,4 +1,4 @@
-FactoryGirld.define do
+FactoryGirl.define do
   factory :comment do
     association :author, factory: :user
     association :task

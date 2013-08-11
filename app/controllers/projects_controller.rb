@@ -17,7 +17,7 @@ class ProjectsController < ApplicationController
 
   # POST /projects
   def create
-    @project = Project.new Project
+    @project = Project.new project_param
     if @project.save
       redirect_to project_path(@project)
     else
